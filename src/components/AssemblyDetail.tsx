@@ -37,7 +37,7 @@ const submissions10th: Submission[] = [
     no: 1,
     author: "신상민",
     dept: "의정팀 · 행정6급",
-    motto: "시민의 / 시민에 의한 / 시민을 위한 (of, by, for the citizen)",
+    motto: "시민의 / 시민에 의한 / 시민을 위한",
     policies: "오직 시민만을 위한 생활 밀착 정치 구현",
     slogan: "시민으로부터 주어진 권한 시민의 뜻에 따라 시민을 위해 쓰는 의회가 되겠습니다.",
     memo: "시민이 주인이 되는 의회"
@@ -326,7 +326,7 @@ export default function AssemblyDetail({ assembly, isDark }: AssemblyDetailProps
         }`}>
           <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold border transition-all duration-300 ${bgBadge}`}>
             <Hourglass className="w-3.5 h-3.5" />
-            <span>{isFirst ? "전반기" : "후반기"} (First Half)</span>
+            <span>{isFirst ? "전반기" : "후반기"}</span>
           </span>
           <span className={`text-xs md:text-sm font-semibold transition-colors duration-300 ${isDark ? "text-slate-400" : "text-slate-500"}`}>{data.term}</span>
         </div>
@@ -589,7 +589,7 @@ export default function AssemblyDetail({ assembly, isDark }: AssemblyDetailProps
             <h3 className={`text-sm md:text-base font-extrabold flex items-center gap-2 mb-4 transition-colors duration-300 ${
               isDark ? "text-indigo-300" : "text-indigo-800"
             }`}>
-              <span className="text-lg">📌</span> 추진 배경 및 경과 (Background & Progress)
+              <span className="text-lg">📌</span> 추진 배경 및 경과
             </h3>
             <ul className="space-y-3 text-xs md:text-sm font-medium">
               <li className="flex items-start gap-2">
@@ -1105,7 +1105,7 @@ export default function AssemblyDetail({ assembly, isDark }: AssemblyDetailProps
           <div className="grid grid-cols-2 gap-6">
             {/* First Half */}
             <div className="p-5 border border-slate-200 rounded-xl space-y-4">
-              <span className="bg-indigo-50 text-indigo-700 text-[10px] font-extrabold px-2 py-0.5 rounded-md">전반기 (First Half)</span>
+              <span className="bg-indigo-50 text-indigo-700 text-[10px] font-extrabold px-2 py-0.5 rounded-md">전반기</span>
               <div className="space-y-1.5">
                 <span className="text-[10px] text-slate-400 font-bold block">역대 의장</span>
                 <span className="font-extrabold text-sm text-slate-800">{assembly.halves.first.speaker || "(공란)"}</span>
@@ -1133,7 +1133,7 @@ export default function AssemblyDetail({ assembly, isDark }: AssemblyDetailProps
 
             {/* Second Half */}
             <div className="p-5 border border-slate-200 rounded-xl space-y-4">
-              <span className="bg-emerald-50 text-emerald-700 text-[10px] font-extrabold px-2 py-0.5 rounded-md">후반기 (Second Half)</span>
+              <span className="bg-emerald-50 text-emerald-700 text-[10px] font-extrabold px-2 py-0.5 rounded-md">후반기</span>
               {(!assembly.halves.second.speaker && !assembly.halves.second.motto) ? (
                 <div className="flex flex-col items-center justify-center h-full text-center py-10 space-y-2">
                   <span className="text-slate-400 text-xs font-semibold">후반기 임기 예정</span>
