@@ -1,0 +1,6 @@
+{
+  "name": "남양주시의회 역대 의정 아카이브",
+  "description": "1991년 제1대부터 2026년 제10대 시민주권시대 의회까지 남양주시의회 전·후반기 의정구조, 의정구호, 의장슬로건의 역사적 변천을 기록하고 체계적으로 분석하는 인터랙티브 모바일 반응형 아카이브입니다.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
